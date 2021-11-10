@@ -7,8 +7,8 @@ import pandas as pd
 import torch
 from datasets import Dataset
 
-from argument_parsers import parser
-from dataset_parsers import load_and_prepare_dataset
+from core.argument_parsers import parser
+from core.dataset_parsers import load_and_prepare_dataset
 from hf.model import BertModel, BertTokenizerFast, MT5Model
 
 logger = logging.getLogger(__name__)

@@ -3,8 +3,8 @@ from typing import Optional, Union
 
 from transformers import set_seed
 
-from api import TurQue
-from bert_api import qa_from_file
+from core.api import TurQue
+from core.bert_api import qa_from_file
 from utils.file import save_json
 
 

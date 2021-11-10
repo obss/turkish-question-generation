@@ -6,8 +6,8 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from jury import Jury
 from jury.metrics import load_metric
 
-from dataset_parsers import load_dataset
-from generate import generate
+from core.dataset_parsers import load_dataset
+from core.generate import generate
 from utils.file import load_json, save_json
 
 logger = logging.getLogger(__name__)
