@@ -63,7 +63,7 @@ jobs:
         if: matrix.operating-system == 'macos-latest'
         run: pip install torch==1.10.0
 
-      - name: Install turque package
+      - name: Install requirements
         run: >
           pip install -r requirements.txt
 
