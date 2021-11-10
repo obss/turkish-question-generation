@@ -59,7 +59,7 @@ do_eval: true
 eval_dataset_list: ["tquad2-valid", "xquad.tr"]
 prepare_data: true
 mt5_task_list: ["qa", "qg", "ans_ext"]
-mt5_qg_format: "highlight"
+mt5_qg_format: "both"
 no_cuda: false
 ```
 
