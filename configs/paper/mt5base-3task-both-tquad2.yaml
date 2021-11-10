@@ -1,0 +1,35 @@
+model_name_or_path: "google/mt5-base"
+tokenizer_path: "tokenizers/mt5-base"
+label_smoothing_factor: 0
+freeze_embeddings: false
+run_name: "turque-mt5base-3task-adamw-tquad2train"
+wandb_project: null
+neptune_project: null
+neptune_api_token: null
+train_dataset_list: ["tquad2-train"]
+valid_dataset_list: ["tquad2-valid"]
+eval_dataset_list: ["tquad2-valid", "xquad.tr"]
+train_file_path: "data/train_data.pt"
+valid_file_path: "data/valid_data.pt"
+max_source_length: 512
+max_target_length: 64
+prepare_data: true
+mt5_task_list: ["qa", "qg", "ans_ext"]
+mt5_qg_format: "both"
+output_dir: "runs/mt5-base/3task-adamw-tquad2train"
+do_train: true
+do_eval: true
+evaluation_strategy: "steps"
+eval_steps: 300
+per_device_train_batch_size: 32
+per_device_eval_batch_size: 32
+gradient_accumulation_steps: 8
+eval_accumulation_steps: 1
+learning_rate: 1.0e-3
+num_train_epochs: 15
+save_total_limit: 1
+no_cuda: false
+seed: 42
+fp16: false
+fp16_full_eval: false
+adafactor: false
