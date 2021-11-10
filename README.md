@@ -4,7 +4,9 @@
 </h1>
 
 <h4>
-  Offical implementation for "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers".
+  Offical implementation for 
+
+  "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers".
 </h4>
 </div>
 
@@ -131,14 +133,17 @@ python train.py config.yaml
 
 [model_url1]: https://drive.google.com/file/d/10hHFuavHCofDczGSzsH1xPHgTgAocOl1/view?usp=sharing
 [model_url2]: https://huggingface.co/google/mt5-small
-[data_url1]: https://github.com/okanvk/Turkish-Reading-Comprehension-Question-Answering-Dataset/blob/master/data/2018%20%2B%202020%20veri%20k%C3%BCmesi/final_train_data_v2.json
-[data_url2]: https://github.com/okanvk/Turkish-Reading-Comprehension-Question-Answering-Dataset/blob/master/data/2018%20%2B%202020%20veri%20k%C3%BCmesi/final_dev_data_v2.json
+[model_url3]: https://huggingface.co/google/mt5-base
+[data_url1]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_train_data_v2.json
+[data_url2]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_dev_data_v2.json
 [data_url3]: https://github.com/deepmind/xquad/blob/master/xquad.tr.json
 
 
 |Name |Model |data<br><sup>train |params<br><sup>(M) |model size<br><sup>(GB) |
 |--- |--- |--- |--- |--- |
-|[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad-train][data_url1]+[tquad-val][data_url2]+[xquad.tr][data_url3] |300M |1.2GB |
+|[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1]+[tquad2-valid][data_url2]+[xquad.tr][data_url3] |300M |1.2GB |
+|[mt5small-3task-both-tquad2][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1] |300M |1.2GB |
+|["mt5base-3task-both-tquad2][model_url1] |[mt5-base][model_url3] |[tquad2-train][data_url1] |300M |1.2GB |
 
 </details>
 
