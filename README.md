@@ -221,19 +221,19 @@ target:
 <div align="center">
  BERTurk-base and mT5-base QA evaluation results for TQuADv2 fine-tuning.
 </p>
-<img src="https://user-images.githubusercontent.com/34196005/141182075-5d3d1c43-fdf3-4892-921b-6e2d5c7550f9.png" width="600">
+<img src="https://user-images.githubusercontent.com/34196005/141182075-5d3d1c43-fdf3-4892-921b-6e2d5c7550f9.png" width="500">
 </div>
 
 <div align="center">
 mT5-base QG evaluation results for single-task (ST) and multi-task (MT) for TQuADv2 fine-tuning.
 </p>
-<img src="https://user-images.githubusercontent.com/34196005/141182079-40cd436c-2a93-4ad6-a59a-1db76e96ccfe.png" width="600">
+<img src="https://user-images.githubusercontent.com/34196005/141182079-40cd436c-2a93-4ad6-a59a-1db76e96ccfe.png" width="500">
 </div>
 
 <div align="center">
 TQuADv1 and TQuADv2 fine-tuning QG evaluation results for multi-task mT5 variants. MT-Both means, mT5 model is fine-tuned with ’Both’ input format and in a multi-task setting.
 </p>
-<img src="https://user-images.githubusercontent.com/34196005/141182081-97dc188b-475a-4dfd-91f6-f08c14a472fc.png" width="600">
+<img src="https://user-images.githubusercontent.com/34196005/141182081-97dc188b-475a-4dfd-91f6-f08c14a472fc.png" width="700">
 </div>
 
 </details>
