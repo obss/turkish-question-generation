@@ -6,7 +6,7 @@
 <h4>
   Offical implementation for 
 
-  "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers".
+  "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers"
 </h4>
 </div>
 
@@ -143,7 +143,7 @@ python train.py config.yaml
 |--- |--- |--- |--- |--- |
 |[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1]+[tquad2-valid][data_url2]+[xquad.tr][data_url3] |300M |1.2GB |
 |[mt5small-3task-both-tquad2][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1] |300M |1.2GB |
-|["mt5base-3task-both-tquad2][model_url1] |[mt5-base][model_url3] |[tquad2-train][data_url1] |300M |1.2GB |
+|[mt5base-3task-both-tquad2][model_url1] |[mt5-base][model_url3] |[tquad2-train][data_url1] |300M |1.2GB |
 
 </details>
 
