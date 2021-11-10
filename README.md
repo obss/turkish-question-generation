@@ -141,9 +141,9 @@ python train.py config.yaml
 
 |Name |Model |data<br><sup>train |params<br><sup>(M) |model size<br><sup>(GB) |
 |--- |--- |--- |--- |--- |
-|[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1]+[tquad2-valid][data_url2]+[xquad.tr][data_url3] |300M |1.2GB |
-|[mt5small-3task-both-tquad2][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1] |300M |1.2GB |
-|[mt5base-3task-both-tquad2][model_url1] |[mt5-base][model_url3] |[tquad2-train][data_url1] |300M |1.2GB |
+|[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1]+[tquad2-valid][data_url2]+[xquad.tr][data_url3] |60M |1.2GB |
+|[mt5small-3task-both-tquad2][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1] |60M |1.2GB |
+|[mt5base-3task-both-tquad2][model_url1] |[mt5-base][model_url3] |[tquad2-train][data_url1] |220M |2.3GB |
 
 </details>
 
