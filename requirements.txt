@@ -1,0 +1,13 @@
+bert-score==0.3.10
+datasets>=1.12.0,<2.0.0
+gdown
+jury>=2.1.0,<3.0.0
+trtokenizer==0.0.3
+protobuf>=3.17.3
+pysocks==1.5.6
+pyyaml
+rouge-score==0.0.4
+sacrebleu==1.5.1
+sentencepiece==0.1.96
+torch==1.10.0
+transformers>=4.10.0,<5.0.0

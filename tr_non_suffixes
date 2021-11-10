@@ -1,0 +1,246 @@
+# This is a non-breaking prefix list for the Turkish language.
+# The file is used for sentence tokenization (tr_tokenizer/tokenizer/SentenceTokenizer class).
+#
+#ASSUMPTION:
+#
+# Anything in this file, followed by a period (and an upper-case word), does NOT
+# indicate an end-of-sentence marker.
+# Special cases are included for prefixes that ONLY appear before 0-9 numbers.
+# Any single upper case letter followed by a period is not a sentence ender
+# Usually upper case letters are initials in a name.
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+# Usually upper case letters are initials in a name (Turkish alphabet)
+Ç
+Ğ
+İ
+Ö
+Ş
+Ü
+# Roman Numerals
+I
+II
+III
+IV
+V
+VI
+VII
+VIII
+IX
+X
+XI
+XII
+XIII
+XIV
+XV
+XVI
+XVII
+XVIII
+XIX
+XX
+
+# English -- but these work globally for all languages:
+Mr
+Mrs
+No
+pp
+St
+no
+Sr
+Jr
+Bros
+etc
+vs
+esp
+Fig
+fig
+Jan
+Feb
+Mar
+Apr
+Jun
+Jul
+Aug
+Sep
+Sept
+Oct
+Okt
+Nov
+Dec
+Ph.D
+PhD
+# in "et al."
+al
+cf
+Inc
+Ms
+Gen
+Sen
+Prof
+Dr
+Corp
+Co
+# http://en.wiktionary.org/wiki/Category:Turkish_abbreviations
+Av
+no
+Başk.yard
+Bşk.yrd
+Akad
+Alb
+Alm
+anat
+ant
+Apt
+Ar
+Ar. Gör
+ark
+As
+Asb
+Asist
+astr
+astrol
+Atğm
+atm
+Av
+bağ
+Bçvş
+B.E
+bitb
+biy
+bk
+Bl
+Bn
+Bnb
+bot
+Böl
+bs
+Bşk
+Bul
+Bulg
+C
+Cad
+coğ
+çev
+Çvş
+D
+dam
+db
+dbl
+Doç
+doğ
+Dr
+Dz. Kuv. K
+dzş
+e
+Ecz
+ed
+ekon
+Ens
+Erm
+F
+f
+Fak
+Far
+fel
+fil
+fiz
+Fr
+Gen
+geom
+gn
+Gnkur
+Gön
+H.O
+Hv. Kuv
+Hv. Kuv. K
+Hz
+İbr
+is
+İsp
+İt
+Mah
+Sok
+LTD
+ŞTİ
+TİC
+PAZ
+SAN
+CAD
+SK
+ORG
+SAN
+BEL
+İST
+JAN
+EĞ
+ÜNİV
+TUG
+SNR
+M.E.B
+KDZ
+A.Ş
+MD
+GN
+ŞB
+BŞ
+K.K
+Yzb
+
+# Number indicators
+# add #NUMERIC_ONLY# after the word if it should ONLY be non-breaking when a 0-9 digit follows it
+hayır
+
+# Ordinals are (apparently) done with . in Turkish - "1." = "1st" in English
+# Ordinals 1 to 10000 added to self.__non_breaking_suffixes, thus they were deleted from here
+# Numbers that may be used in date were added
+01
+02
+03
+04
+05
+06
+07
+08
+09
+
+# (d. 998 - ö. 1068)
+d
+ö
+(d
+- ö
+# Ömer b. Abdülazīz
+b
+# Ord. Prof. Dr.
+Ord
+# 14-17. Yüzyıllarda ??
+#(Çerkez, Abaza, vs.) Musluaman ??
+# Prof.Dr. Ernst
+Prof.Dr
+# Ss. Cyril and Methodius University
+Ss
+# Bulgar Bilimler Akademisi Başkanı Acad. Stefan Vodenicharov'dan aldı.
+Acad
