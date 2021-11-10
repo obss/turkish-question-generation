@@ -15,6 +15,7 @@ from utils.nlp import (
 # former url train data was unfit for (pyarrow) datasets.Dataset (file maybe corrupt).
 
 _TQUAD_URL = "https://github.com/fcakyon/turkish-qa-datasets/releases/download/0.0.1/"
+# _TQUAD_URL = "https://github.com/obss/turkish-question-generation/releases/download/0.0.1/"
 _TQUAD1_DEV_FILE = "tquad_dev_data_v1.json"
 _TQUAD1_TRAINING_FILE = "tquad_train_data_v1.json"
 _TQUAD2_DEV_FILE = "tquad_dev_data_v2.json"
