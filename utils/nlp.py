@@ -1,4 +1,6 @@
 import itertools
+import logging
+import os
 import re
 import string
 from typing import Dict, List, Union
@@ -8,6 +10,13 @@ from trtokenizer.tr_tokenizer import SentenceTokenizer
 
 from utils import SOURCE_ROOT
 from utils.file import attempt_download, load_json
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(
+    format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
+    datefmt="%m/%d/%Y %H:%M:%S",
+    level=os.environ.get("LOGLEVEL", "INFO").upper(),
+)
 
 
 def sentence_tokenize(context: str) -> List[str]:
@@ -94,12 +103,12 @@ def get_answer_indices_from_sentence(answer_text: str, sentence: str, loose_matc
     except AttributeError as e:
         # No match
         if loose_match:
-            print(f"skipping the answer|sentence pair: {answer_text}| {sentence}| for reason: {e}")
+            logger.debug(f"skipping the answer|sentence pair: {answer_text}| {sentence}| for reason: {e}")
         return None
     except Exception as e:
         # Incorrect structure
         if loose_match:
-            print(f"skipping the answer|sentence pair: {answer_text}| {sentence}| for reason: {e}")
+            logger.debug(f"skipping the answer|sentence pair: {answer_text}| {sentence}| for reason: {e}")
         return None
     else:
         answer = {"text": answer_text, "answer_start": ans_start_idx, "answer_end": ans_end_idx}
