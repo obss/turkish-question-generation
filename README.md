@@ -17,7 +17,6 @@
 ```bash
 git clone https://github.com/obss/turkish-question-generation.git
 cd turkish-question-generation
-conda env create --name turkish-question-generation python=3.8
 pip install -r requirements.txt
 ```
 </details>
@@ -27,28 +26,47 @@ pip install -r requirements.txt
 <big><b>train</b></big>
 </summary>
 
-- activate env:
-
-```bash
-conda activate turque
-```
-
 - start a training using args:
 
 ```bash
-python train.py --model_name_or_path google/mt5-small  --output_dir runs/exp1 --do_train --do_eval --tokenizer_name_or_path mt5_qg_tokenizer --per_device_train_batch_size 4 --gradient_accumulation_steps 2 --learning_rate 1e-4 --seed 42 --save_total_limit 1
+python run.py --model_name_or_path google/mt5-small  --output_dir runs/exp1 --do_train --do_eval --tokenizer_name_or_path mt5_qg_tokenizer --per_device_train_batch_size 4 --gradient_accumulation_steps 2 --learning_rate 1e-4 --seed 42 --save_total_limit 1
 ```
 
 - download [json config](configs/default/config.json) file and start a training:
 
 ```bash
-python train.py config.json
+python run.py config.json
 ```
 
 - downlaod [yaml config](configs/default/config.yaml) file and start a training:
 
 ```bash
-python train.py config.yaml
+python run.py config.yaml
+```
+
+</details>
+
+<details closed>
+<summary>
+<big><b>evaluate</b></big>
+</summary>
+
+- arrange related params in config:
+
+```yaml
+do_train: false
+do_eval: true
+eval_dataset_list: ["tquad2-valid", "xquad.tr"]
+prepare_data: true
+mt5_task_list: ["qa", "qg", "ans_ext"]
+mt5_qg_format: "highlight"
+no_cuda: false
+```
+
+- start an evaluation:
+
+```bash
+python run.py config.yaml
 ```
 
 </details>

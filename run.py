@@ -11,9 +11,9 @@ from transformers.hf_argparser import DataClass
 from transformers.optimization import Adafactor, AdamW
 from transformers.trainer import Trainer
 
-from argument_parsers import parser
-from collator import T2TDataCollator
-from evaluate import evaluate_on_train_end
+from core.argument_parsers import parser
+from core.collator import T2TDataCollator
+from core.evaluate import evaluate_on_train_end
 from hf.model import BertModel, MT5Model
 from prepare_data import main as prepare_data
 from utils.file import save_experiment_config

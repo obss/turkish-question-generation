@@ -77,13 +77,9 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-      - name: Test prepare_data, train, generate cli comamnds
+      - name: Test prepare_data and train
         run: |
           # prepare_data
           python prepare_data.py tests/test_config.yaml
           # train
-          python train.py tests/test_config.yaml
-          # generate
-          python generate.py --task qa --path_or_dict data/tquad/tquad_dev_small_data.json --output qa_generation.json
-          python generate.py --task qg --path_or_dict data/tquad/tquad_dev_small_data.json --output qg_generation.json
-          python generate.py --task qg --path_or_dict data/tquad/tquad_dev_small_data.json --use_answers --output qg_generation.json
+          python run.py tests/test_config.yaml
