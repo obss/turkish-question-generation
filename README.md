@@ -136,6 +136,7 @@ python train.py config.yaml
 [model_url3]: https://huggingface.co/google/mt5-base
 [model_url4]: https://drive.google.com/uc?id=17MTMDhhEtQ9AP-y3mQl0QV0T8SvT_OZF
 [model_url5]: https://drive.google.com/uc?id=1LOaZvQFwVGk9WFXU1bB8MsgjEsmN__Ex
+[model_url6]: https://drive.google.com/uc?id=10M2sukxLiat2M4j_nIJycn4X5gtij-K9
 [data_url1]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_train_data_v2.json
 [data_url2]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_dev_data_v2.json
 [data_url3]: https://github.com/deepmind/xquad/blob/master/xquad.tr.json
@@ -145,6 +146,7 @@ python train.py config.yaml
 |--- |--- |--- |--- |--- |
 |[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1]+[tquad2-valid][data_url2]+[xquad.tr][data_url3] |60M |1.2GB |
 |[mt5-small-3task-both-tquad2][model_url4] |[mt5-small][model_url2] |[tquad2-train][data_url1] |60M |1.2GB |
+|[mt5-small-3task-prepend-tquad2][model_url6] |[mt5-small][model_url2] |[tquad2-train][data_url1] |60M |1.2GB |
 |[mt5-base-3task-both-tquad2][model_url5] |[mt5-base][model_url3] |[tquad2-train][data_url1] |220M |2.3GB |
 
 </details>

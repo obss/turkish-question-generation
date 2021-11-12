@@ -12,6 +12,7 @@ from utils.torch import assert_not_all_frozen, freeze_embeds
 PRETRAINED_NAME_TO_GDRIVE_URL = {
     "turque-s1": "https://drive.google.com/uc?id=10hHFuavHCofDczGSzsH1xPHgTgAocOl1",
     "mt5-small-3task-both-tquad2": "https://drive.google.com/uc?id=17MTMDhhEtQ9AP-y3mQl0QV0T8SvT_OZF",
+    "mt5-small-3task-prepend-tquad2": "https://drive.google.com/uc?id=10M2sukxLiat2M4j_nIJycn4X5gtij-K9",
     "mt5-base-3task-both-tquad2": "https://drive.google.com/uc?id=1LOaZvQFwVGk9WFXU1bB8MsgjEsmN__Ex",
     "mt5-small-3task-both-combined3": "",
     "mt5-base-3task-both-combined3": "",
