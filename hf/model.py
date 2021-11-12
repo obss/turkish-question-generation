@@ -9,7 +9,14 @@ from transformers.hf_argparser import DataClass
 from utils.file import download_from_gdrive_and_unzip
 from utils.torch import assert_not_all_frozen, freeze_embeds
 
-TURQUE_S1_GDRIVE_URL = "https://drive.google.com/uc?id=10hHFuavHCofDczGSzsH1xPHgTgAocOl1"
+PRETRAINED_NAME_TO_GDRIVE_URL = {
+    "turque-s1": "https://drive.google.com/uc?id=10hHFuavHCofDczGSzsH1xPHgTgAocOl1",
+    "mt5-small-3task-both-tquad2": "https://drive.google.com/uc?id=17MTMDhhEtQ9AP-y3mQl0QV0T8SvT_OZF",
+    "mt5-small-3task-prepend-tquad2": "https://drive.google.com/uc?id=10M2sukxLiat2M4j_nIJycn4X5gtij-K9",
+    "mt5-base-3task-both-tquad2": "https://drive.google.com/uc?id=1LOaZvQFwVGk9WFXU1bB8MsgjEsmN__Ex",
+    "mt5-small-3task-both-combined3": "",
+    "mt5-base-3task-both-combined3": "",
+}
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
@@ -28,15 +35,16 @@ class MT5Model:
         cache_dir: Optional[str] = None,
         use_cuda: bool = None,
     ):
-        # try downloading pretrained files
-        if model_name_or_path == "turque-s1":
-            model_name_or_path = "data/pretrained/turque-s1/"
-            if not os.path.isfile("data/pretrained/turque-s1/pytorch_model.bin"):
-                download_from_gdrive_and_unzip(TURQUE_S1_GDRIVE_URL, model_name_or_path)
-                logger.info(f"pretrained model is downloaded to {model_name_or_path}")
+        # try downloading pretrained files from gdrive
+        if model_name_or_path in PRETRAINED_NAME_TO_GDRIVE_URL.keys():
+            download_dir = "data/pretrained/" + model_name_or_path + "/"
+            weight_path = "data/pretrained/" + model_name_or_path + "/" + "/pytorch_model.bin"
+            if not os.path.isfile(weight_path):
+                download_from_gdrive_and_unzip(PRETRAINED_NAME_TO_GDRIVE_URL[model_name_or_path], download_dir)
+                logger.info(f"pretrained model is downloaded to {download_dir}")
             else:
-                logger.info(f"using pretrained model at {model_name_or_path}")
-            model_name_or_path = "data/pretrained/turque-s1/"
+                logger.info(f"using pretrained model at {download_dir}")
+            model_name_or_path = download_dir
 
         model = AutoModelForSeq2SeqLM.from_pretrained(
             model_name_or_path,

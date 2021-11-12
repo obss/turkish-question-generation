@@ -4,7 +4,9 @@
 </h1>
 
 <h4>
-  Offical implementation for "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers".
+  Offical implementation for 
+
+  "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers"
 </h4>
 </div>
 
@@ -129,16 +131,23 @@ python train.py config.yaml
 <big><b>finetuned checkpoints</b></big>
 </summary>
 
-[model_url1]: https://drive.google.com/file/d/10hHFuavHCofDczGSzsH1xPHgTgAocOl1/view?usp=sharing
+[model_url1]: https://drive.google.com/uc?id=10hHFuavHCofDczGSzsH1xPHgTgAocOl1
 [model_url2]: https://huggingface.co/google/mt5-small
-[data_url1]: https://github.com/okanvk/Turkish-Reading-Comprehension-Question-Answering-Dataset/blob/master/data/2018%20%2B%202020%20veri%20k%C3%BCmesi/final_train_data_v2.json
-[data_url2]: https://github.com/okanvk/Turkish-Reading-Comprehension-Question-Answering-Dataset/blob/master/data/2018%20%2B%202020%20veri%20k%C3%BCmesi/final_dev_data_v2.json
+[model_url3]: https://huggingface.co/google/mt5-base
+[model_url4]: https://drive.google.com/uc?id=17MTMDhhEtQ9AP-y3mQl0QV0T8SvT_OZF
+[model_url5]: https://drive.google.com/uc?id=1LOaZvQFwVGk9WFXU1bB8MsgjEsmN__Ex
+[model_url6]: https://drive.google.com/uc?id=10M2sukxLiat2M4j_nIJycn4X5gtij-K9
+[data_url1]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_train_data_v2.json
+[data_url2]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_dev_data_v2.json
 [data_url3]: https://github.com/deepmind/xquad/blob/master/xquad.tr.json
 
 
 |Name |Model |data<br><sup>train |params<br><sup>(M) |model size<br><sup>(GB) |
 |--- |--- |--- |--- |--- |
-|[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad-train][data_url1]+[tquad-val][data_url2]+[xquad.tr][data_url3] |300M |1.2GB |
+|[turque-s1][model_url1] |[mt5-small][model_url2] |[tquad2-train][data_url1]+[tquad2-valid][data_url2]+[xquad.tr][data_url3] |60M |1.2GB |
+|[mt5-small-3task-both-tquad2][model_url4] |[mt5-small][model_url2] |[tquad2-train][data_url1] |60M |1.2GB |
+|[mt5-small-3task-prepend-tquad2][model_url6] |[mt5-small][model_url2] |[tquad2-train][data_url1] |60M |1.2GB |
+|[mt5-base-3task-both-tquad2][model_url5] |[mt5-base][model_url3] |[tquad2-train][data_url1] |220M |2.3GB |
 
 </details>
 
@@ -206,6 +215,31 @@ target:
 ```
 "Osman Bey nerede doğmuştur?"
 ```
+</details>
+
+<details closed>
+<summary>
+<big><b>paper results</b></big>
+</summary>
+
+<div align="center">
+ BERTurk-base and mT5-base QA evaluation results for TQuADv2 fine-tuning.
+</p>
+<img src="https://user-images.githubusercontent.com/34196005/141182075-5d3d1c43-fdf3-4892-921b-6e2d5c7550f9.png" width="500">
+</div>
+
+<div align="center">
+mT5-base QG evaluation results for single-task (ST) and multi-task (MT) for TQuADv2 fine-tuning.
+</p>
+<img src="https://user-images.githubusercontent.com/34196005/141182079-40cd436c-2a93-4ad6-a59a-1db76e96ccfe.png" width="500">
+</div>
+
+<div align="center">
+TQuADv1 and TQuADv2 fine-tuning QG evaluation results for multi-task mT5 variants. MT-Both means, mT5 model is fine-tuned with ’Both’ input format and in a multi-task setting.
+</p>
+<img src="https://user-images.githubusercontent.com/34196005/141182081-97dc188b-475a-4dfd-91f6-f08c14a472fc.png" width="700">
+</div>
+
 </details>
 
 <details closed>
