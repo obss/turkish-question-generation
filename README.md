@@ -15,7 +15,7 @@
   <big><b>citation</b></big>
 </summary>
   
-If you use this software in your work, pleas cite as:
+If you use this software in your work, please cite as:
   
 ```
 @article{akyon2021automated,
