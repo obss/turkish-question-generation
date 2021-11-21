@@ -4,12 +4,29 @@
 </h1>
 
 <h4>
-  Offical implementation for 
+  Offical source code for 
 
-  "Automated question generation &amp; question answering from Turkish texts using text-to-text transformers"
+  <a href="https://arxiv.org/abs/2111.06476">"Automated question generation &amp; question answering from Turkish texts using text-to-text transformers"</a>
 </h4>
 </div>
 
+<details open>
+<summary>
+  <big><b>citation</b></big>
+</summary>
+  
+If you use this software in your work, pleas cite as:
+  
+```
+@article{akyon2021automated,
+  title={Automated question generation and question answering from Turkish texts using text-to-text transformers},
+  author={Akyon, Fatih Cagatay and Cavusoglu, Devrim and Cengiz, Cemil and Altinuc, Sinan Onur and Temizel, Alptekin},
+  journal={arXiv preprint arXiv:2111.06476},
+  year={2021}
+}
+```
+  
+</details>
 
 <details closed>
 <summary>
