@@ -1,8 +1,5 @@
-import itertools
 import logging
 import os
-import re
-from collections import OrderedDict
 from typing import Dict, List, Optional, Union
 
 from tqdm import tqdm
@@ -37,9 +34,9 @@ class TurQue:
         generate_num_beams: int = 4,
         top_k: int = None,
         top_p: float = None,
-        qg_format: str = "highlight",
+        qg_format: str = "both",
     ):
-        model_url_or_path = "turque-s1" if model_url_or_path is None else model_url_or_path
+        model_url_or_path = "mt5-base-3task-both-combined3" if model_url_or_path is None else model_url_or_path
         mt5_model = MT5Model(model_url_or_path, use_cuda=use_cuda)
         self.model = mt5_model.model
         self.tokenizer = mt5_model.tokenizer
