@@ -24,19 +24,19 @@ logging.basicConfig(
 )
 
 
-class TurQue:
+class GenerationAPI:
     def __init__(
         self,
         model_url_or_path: str = None,
         use_cuda: bool = None,
         max_source_length: int = 512,
-        max_target_length: int = 80,
+        max_target_length: int = 64,
         generate_num_beams: int = 4,
         top_k: int = None,
         top_p: float = None,
-        qg_format: str = "both",
+        qg_format: str = "highlight",
     ):
-        model_url_or_path = "mt5-base-3task-both-combined3" if model_url_or_path is None else model_url_or_path
+        model_url_or_path = "mt5-small-3task-highlight-combined3" if model_url_or_path is None else model_url_or_path
         mt5_model = MT5Model(model_url_or_path, use_cuda=use_cuda)
         self.model = mt5_model.model
         self.tokenizer = mt5_model.tokenizer
