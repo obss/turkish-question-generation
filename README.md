@@ -153,9 +153,9 @@ python train.py config.yaml
 [model_url3]: https://huggingface.co/google/mt5-base
 [model_url4]: https://drive.google.com/uc?id=17MTMDhhEtQ9AP-y3mQl0QV0T8SvT_OZF
 [model_url5]: https://drive.google.com/uc?id=1LOaZvQFwVGk9WFXU1bB8MsgjEsmN__Ex
-[model_url6]: https://drive.google.com/uc?id=10M2sukxLiat2M4j_nIJycn4X5gtij-K9
+[model_url6]: https://drive.google.com/uc?id=1JG14mynmu-b3Dy2UDJr4AyJQyuW-uabh
 [model_url7]: https://drive.google.com/uc?id=1WMQ_Iis4eYvD52wt2zXaFSzpU8umFNd2
-[model_url8]: https://drive.google.com/uc?id=10M2sukxLiat2M4j_nIJycn4X5gtij-K9
+[model_url8]: https://drive.google.com/uc?id=1oSxKqog8NReVctL_GJQJGiYnqiXDLFsJ
 [data_url1]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_train_data_v2.json
 [data_url2]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_dev_data_v2.json
 [data_url3]: https://github.com/deepmind/xquad/blob/master/xquad.tr.json
