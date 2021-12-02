@@ -12,9 +12,9 @@ from utils.torch import assert_not_all_frozen, freeze_embeds
 PRETRAINED_NAME_TO_GDRIVE_URL = {
     "mt5-small-3task-highlight-tquad2": "https://drive.google.com/uc?id=1Cnovcib1I276GmJVOGa33jySIwOthIa7",
     "mt5-small-3task-prepend-tquad2": "https://drive.google.com/uc?id=1JG14mynmu-b3Dy2UDJr4AyJQyuW-uabh",
-    "mt5-base-3task-highlight-tquad2": "",
+    "mt5-base-3task-highlight-tquad2": "https://drive.google.com/uc?id=1hVhR5hQHcIVKj5pPgvYkcl1WWDDHpOFL",
     "mt5-small-3task-highlight-combined3": "https://drive.google.com/uc?id=10hHFuavHCofDczGSzsH1xPHgTgAocOl1",
-    "mt5-base-3task-highlight-combined3": "",
+    "mt5-base-3task-highlight-combined3": "https://drive.google.com/uc?id=1W8PXgx6VDaThDdLNkL-HVWb1MNcQdxwp",
 }
 
 logger = logging.getLogger(__name__)

@@ -152,10 +152,10 @@ python train.py config.yaml
 [model_url2]: https://huggingface.co/google/mt5-small
 [model_url3]: https://huggingface.co/google/mt5-base
 [model_url4]: https://drive.google.com/uc?id=1Cnovcib1I276GmJVOGa33jySIwOthIa7
-[model_url5]: ''
+[model_url5]: 'https://drive.google.com/uc?id=1hVhR5hQHcIVKj5pPgvYkcl1WWDDHpOFL'
 [model_url6]: https://drive.google.com/uc?id=1JG14mynmu-b3Dy2UDJr4AyJQyuW-uabh
 [model_url7]: https://drive.google.com/uc?id=10hHFuavHCofDczGSzsH1xPHgTgAocOl1
-[model_url8]: ''
+[model_url8]: 'https://drive.google.com/uc?id=1W8PXgx6VDaThDdLNkL-HVWb1MNcQdxwp'
 [data_url1]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_train_data_v2.json
 [data_url2]: https://github.com/obss/turkish-question-generation/releases/download/0.0.1/tquad_dev_data_v2.json
 [data_url3]: https://github.com/deepmind/xquad/blob/master/xquad.tr.json
