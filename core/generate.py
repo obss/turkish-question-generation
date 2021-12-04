@@ -3,7 +3,7 @@ from typing import Optional, Union
 
 from transformers import set_seed
 
-from core.api import TurQue
+from core.api import GenerationAPI
 from core.bert_api import qa_from_file
 from utils.file import save_json
 
@@ -25,7 +25,7 @@ def generate_qg(
     qg_format: str = "highlight",
 ):
     use_answers = False if use_answers is None else use_answers
-    turque = TurQue(
+    turque = GenerationAPI(
         model_url_or_path=model_url_or_path,
         use_cuda=use_cuda,
         max_source_length=max_source_length,
@@ -44,7 +44,7 @@ def generate_qa(
     max_source_length: int = 512,
     max_target_length: int = 80,
 ):
-    turque = TurQue(
+    turque = GenerationAPI(
         model_url_or_path=model_url_or_path,
         use_cuda=use_cuda,
         max_source_length=max_source_length,
@@ -62,7 +62,7 @@ def generate_ans_ext(
     max_source_length: int = 512,
     max_target_length: int = 80,
 ):
-    turque = TurQue(
+    turque = GenerationAPI(
         model_url_or_path=model_url_or_path,
         use_cuda=use_cuda,
         max_source_length=max_source_length,
