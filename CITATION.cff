@@ -24,7 +24,7 @@ url: "https://github.com/obss/turkish-question-generation"
 preferred-citation:
   type: article
   title: Automated question generation and question answering from Turkish texts
-  doi: https://doi.org/10.3906/elk-1300-0632.3914
+  doi: 10.3906/elk-1300-0632.3914
   url: https://journals.tubitak.gov.tr/elektrik/vol30/iss5/17/
   journal: Turkish Journal of Electrical Engineering and Computer Sciences
   authors:
@@ -39,5 +39,4 @@ preferred-citation:
   - family-names: "Temizel"
     given-names: "Alptekin"
   year: 2022
-  pages: {1931--1940}
-  doi: 10.3906/elk-1300-0632.3914
+  pages: 1931,1940
