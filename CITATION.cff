@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "If you use this package, please consider citing it."
 authors:
 - family-names: "Akyon"
   given-names: "Fatih Cagatay"
@@ -23,22 +23,21 @@ date-released: 2021-11-11
 url: "https://github.com/obss/turkish-question-generation"
 preferred-citation:
   type: article
+  title: Automated question generation and question answering from Turkish texts
+  doi: https://doi.org/10.3906/elk-1300-0632.3914
+  url: https://journals.tubitak.gov.tr/elektrik/vol30/iss5/17/
+  journal: Turkish Journal of Electrical Engineering and Computer Sciences
   authors:
   - family-names: "Akyon"
     given-names: "Fatih Cagatay"
-    orcid: "https://orcid.org/0000-0001-7098-3944"
   - family-names: "Cavusoglu"
-    given-names: "Devrim"
-    orcid: "https://orcid.org/0000-0002-5218-1283"
+    given-names: "Ali Devrim Ekin"
   - family-names: "Cengiz"
     given-names: "Cemil"
-    orcid: "https://orcid.org/0000-0003-2681-5059"
   - family-names: "Altinuc"
     given-names: "Sinan Onur"
-    orcid: "https://orcid.org/0000-0001-5119-160X"
   - family-names: "Temizel"
     given-names: "Alptekin"
-    orcid: "https://orcid.org/0000-0001-6082-2573"
-  journal: "arXiv preprint arXiv:2111.06476"
-  title: "Automated question generation and question answering from Turkish texts using text-to-text transformers"
-  year: 2021
+  year: 2022
+  pages: {1931--1940}
+  doi: 10.3906/elk-1300-0632.3914
