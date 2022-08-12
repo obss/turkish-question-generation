@@ -18,11 +18,13 @@
 If you use this software in your work, please cite as:
   
 ```
-@article{akyon2021automated,
-  title={Automated question generation and question answering from Turkish texts using text-to-text transformers},
-  author={Akyon, Fatih Cagatay and Cavusoglu, Devrim and Cengiz, Cemil and Altinuc, Sinan Onur and Temizel, Alptekin},
-  journal={arXiv preprint arXiv:2111.06476},
-  year={2021}
+@article{akyon2022questgen,
+    author = {Akyon, Fatih Cagatay and Cavusoglu, Ali Devrim Ekin and Cengiz, Cemil and Altinuc, Sinan Onur and Temizel, Alptekin},
+    doi = {10.3906/elk-1300-0632.3914},
+    journal = {Turkish Journal of Electrical Engineering and Computer Sciences},
+    title = {{Automated question generation and question answering from Turkish texts}},
+    url = {https://journals.tubitak.gov.tr/elektrik/vol30/iss5/17/},
+    year = {2022}
 }
 ```
   
