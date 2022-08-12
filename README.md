@@ -239,7 +239,7 @@ target:
 ```
 </details>
 
-<details closed>
+<details open>
 <summary>
 <big><b>paper results</b></big>
 </summary>
