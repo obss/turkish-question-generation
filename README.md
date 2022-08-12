@@ -6,7 +6,7 @@
 <h4>
   Offical source code for 
 
-  <a href="https://arxiv.org/abs/2111.06476">"Automated question generation &amp; question answering from Turkish texts using text-to-text transformers"</a>
+  <a href="https://journals.tubitak.gov.tr/elektrik/vol30/iss5/17/">"Automated question generation &amp; question answering from Turkish texts"</a>
 </h4>
 </div>
 
